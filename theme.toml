@@ -1,21 +1,27 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
-name = "Techo"
-license = "MIT"
-licenselink = "https://github.com/lfkdsk/techo-hugo-theme/blob/master/LICENSE"
-description = ""
-homepage = "https://lfkdsk.github.io/"
-tags = []
-features = []
-min_version = "0.41"
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "lfkdsk's Blog"
+theme = "techo"
+DefaultContentLanguage = "en"
 
 [author]
   name = "lfkdsk"
   homepage = "https://lfkdsk.github.io/"
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 1
+  [languages.cn]
+    contentDir = "content/cn"
+    languageName = "Chinese"
+    weight = 1
+
+[params]
+disqus = "lfkdsk" # disqus account name
+extraHead = ''
+
+[[params.socials]]
+name = "About Me"
+link = "https://lfkdsk.github.io"
