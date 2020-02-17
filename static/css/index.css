@@ -134,6 +134,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .post-date {}
@@ -150,6 +154,8 @@ a {
 .post-title {
   font-size: 2.5rem;
   font-weight: 600;
+  word-wrap:break-word; 
+  word-break:break-all; 
 }
 
 .post-content {
@@ -193,4 +199,8 @@ a {
   border-top-right-radius: 200px 195px;
   border-bottom-right-radius: 160px 195px;
   border-bottom-left-radius: 185px 190px
+}
+
+.markdown-body pre {
+  background: #232323;
 }
