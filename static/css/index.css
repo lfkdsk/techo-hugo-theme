@@ -201,6 +201,20 @@ a {
   border-bottom-left-radius: 185px 190px
 }
 
+.to-left {
+  position: fixed;
+  opacity: 1;
+  display: inline-block;
+  padding: 1em;
+  top: 1.5em;
+  left: 1em
+}
+
+.to-left .paper-btn {
+  padding: .6em 1em;
+  background: #fff;
+}
+
 .markdown-body pre {
   background: #232323;
 }
