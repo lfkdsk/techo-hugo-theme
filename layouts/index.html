@@ -14,13 +14,13 @@
               </header>
               <div class="row flex-right">
                 {{ if .Site.Author.github }}
-                <div class="lang-switch sm-4 margin-right">
+                <div class="lang-switch col">
                   <a href="{{ .Site.Author.github }}"> Github </a>
                 </div>     
                 {{ end }}           
                 {{ range .Site.Languages -}}
                 {{ if ne .LanguageName $curLanguageName }}
-                <div class="lang-switch sm-4">
+                <div class="lang-switch col">
                   <a href="/{{ .Lang }}/">{{ .LanguageName }}</a>
                 </div>
                 {{ end }}
