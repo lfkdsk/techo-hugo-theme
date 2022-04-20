@@ -1,18 +1,20 @@
 /* global */
 
 html {
-  font-family: "Arvo", Arial, Helvetica, sans-serif;
+  font-family: "Bree Serif", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  font-family: "Arvo", Arial, Helvetica, sans-serif;
+  font-family: "Bree Serif", sans-serif;
+  -webkit-font-smoothing: antialiased;
   margin: 0 20px;
   background-image: url("/img/geometry2.png");
 }
 
 /* overwrite */
 .markdown-body {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* i18n */
@@ -70,12 +72,12 @@ a {
 /* header */
 
 .site-title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 32px;
 }
 
 .site-title a {
-  font-family: Neucha,sans-serif
+  font-family: bungee shade,sans-serif;
 }
 
 .site-date-catalog {

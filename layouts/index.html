@@ -6,7 +6,7 @@
   <body>
     <article class="posts">
         <div class="row">
-            <div class="paper col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="paper col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
               <header>
                 <div class="signatures site-title">
                   <a href="{{ .LanguagePrefix }}/">{{ .Site.Author.name }}</a>
@@ -41,6 +41,13 @@
                     </div>
                     <div class="posts-title col-xs-10">
                       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </div>
+                    <div class="col-xs-1 col-sm-2 posts-categories">
+                      {{ range .Params.categories }}
+                      <div class="posts-category">
+                        <a href="/categories/{{ lower . }}/"><strong>{{ . }}</strong></a>
+                      </div>
+                      {{ end }}
                     </div>
                   </div>
                   {{ end }}
