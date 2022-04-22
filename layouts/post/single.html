@@ -27,12 +27,16 @@
           <!-- <div class="to-left">
             <a href="javascript:history.back()" class="paper-btn"><</a>
           </div> -->
-          <div class="to-top">
+          <!-- <div class="to-top">
             <a href="#top" class="paper-btn margin">^</a>
-          </div> 
+          </div>  -->
           <div class="post-content markdown-body">
             {{ .Content }}
           </div>
+          
+          {{ .Site.Params.postFooterContent | safeHTML }}
+
+          <div style="height:50px"></div>
           {{ if .Site.Params.disqus }}
           <div class="post-comments">
             {{ partial "disqus.html" . }}

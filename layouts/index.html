@@ -13,11 +13,11 @@
                 </div>
               </header>
               <div class="row flex-right">
-                {{ if .Site.Author.github }}
-                <div class="lang-switch col">
-                  <a href="{{ .Site.Author.github }}"> Github </a>
-                </div>     
-                {{ end }}           
+                {{ range .Site.Params.socials }}
+                <div class="posts-footer-item">
+                  <a href="{{ .link }}" target="_blank">{{ .name }}</a>
+                </div>
+                {{ end }}
                 {{ range .Site.Languages -}}
                 {{ if ne .LanguageName $curLanguageName }}
                 <div class="lang-switch col">
@@ -26,9 +26,11 @@
                 {{ end }}
                 {{ end }}
               </div>
-              <div class="to-top">
+              <div class="header-line"></div>
+
+              <!-- <div class="to-top">
                 <a href="#top" class="paper-btn margin">^</a>
-              </div>    
+              </div>     -->
               <div id="posts-list">
                 {{ range .Data.Pages.GroupByDate "2006" -}}
                 <section>
@@ -56,13 +58,8 @@
               </div>
 
               <div class="posts-footer">
-                {{ range .Site.Params.socials }}
                 <div class="posts-footer-item">
-                  <a href="{{ .link }}" target="_blank">{{ .name }}</a>
-                </div>
-                {{ end }}
-                <div class="posts-footer-item">
-                  <a href="https://github.com/lfkdsk/techo-hugo-theme" target="_blank">Techo</a>
+                  <a href="https://github.com/lfkdsk/techo-hugo-theme" target="_blank">Powered by Techo</a>
                 </div>
               </div>
             </div>

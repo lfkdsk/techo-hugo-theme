@@ -17,6 +17,15 @@ body {
   font-size: 16px;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
 /* i18n */
 
 .Chinese .markdown-body {
@@ -72,8 +81,9 @@ a {
 /* header */
 
 .site-title {
-  font-size: 2rem;
-  margin-top: 32px;
+  font-size: 1.8rem;
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .site-title a {
@@ -81,7 +91,7 @@ a {
 }
 
 .site-date-catalog {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .signatures {
@@ -103,6 +113,12 @@ a {
   font-weight: 600;
 }
 
+.header-line {
+  width: 100%;
+  border-width: 2px;
+  border-color: #482936;
+  border-style: solid none none none;
+}
 /* posts */
 
 .posts {
@@ -111,7 +127,7 @@ a {
 
 .posts-date,
 .posts-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .post-line {
@@ -154,7 +170,7 @@ a {
 }
 
 .post-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   word-wrap:break-word; 
   word-break:break-all; 
