@@ -125,9 +125,15 @@ a {
   margin-bottom: 80px;
 }
 
-.posts-date,
+.posts-date {
+  font-size: 1.1rem;
+}
+
 .posts-title {
   font-size: 1.1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* word-break: break-all; */
 }
 
 .post-line {
