@@ -60,6 +60,11 @@ a {
   color: #000;
 }
 
+p {
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+}
+
 /* fonts */
 
 /* @font-face {
